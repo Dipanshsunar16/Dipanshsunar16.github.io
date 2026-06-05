@@ -1,0 +1,190 @@
+/* RESET */
+
+*{
+    transition: all 0.3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #111827;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    color: #ffffff;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 15px 0;
+    color: #cbd5e1;
+}
+
+/* BUTTON */
+.btn {
+    background: #38bdf8;
+    padding: 12px 25px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 10%;
+}
+
+/* ABOUT */
+.about p {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+}
+
+/* PROJECT GRID */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* CONTACT */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #1e293b;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    margin-top: 40px;
+}
+
+
+
+/* Light Mode */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .navbar,
+.light-mode footer {
+    background-color: #e5e7eb;
+}
+
+.light-mode .nav-links a {
+    color: black;
+}
+
+.light-mode .hero {
+    background-color: #f8fafc;
+    color: black;
+}
+
+.light-mode .hero p,
+.light-mode .about p {
+    color: #334155;
+}
+
+.light-mode .project-card {
+    background-color: #dbeafe;
+    color: black;
+}
+
+.light-mode input,
+.light-mode textarea {
+    background-color: white;
+    color: black;
+    border: 1px solid #cbd5e1;
+}
+
+#topBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
