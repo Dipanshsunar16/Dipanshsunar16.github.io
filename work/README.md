@@ -6,3 +6,5 @@ git log --oneline
 git reset HEAD~2
 hello this is another line
 git reset --hard HEAD~3
+and this was the work
+git diff     /===============
