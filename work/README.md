@@ -13,3 +13,5 @@ git branch feature1
 
 //branch test 1
 //hello
+get checkout main
+get checkout feature1
